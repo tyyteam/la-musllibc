@@ -26,6 +26,7 @@ set(
     "aarch64" # use KernelSel4Arch
     "riscv32:riscv" # no difference between 32/64 bit
     "riscv64:riscv" # no difference between 32/64 bit
+    "loongarch64:loongarch" 
 )
 # Find the tuple with the mapping information. If KernelSel4Arch is not set at
 # all, matching will fail.
