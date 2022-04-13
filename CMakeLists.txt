@@ -9,7 +9,6 @@
 #
 # @TAG(DATA61_BSD)
 #
-
 cmake_minimum_required(VERSION 3.5.1)
 
 project(libmuslc NONE)

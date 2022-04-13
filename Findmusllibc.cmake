@@ -52,6 +52,7 @@ macro(musllibc_import_library)
 endmacro()
 
 macro(musllibc_setup_build_environment_with_sel4runtime)
+    set(CMAKE_VERBOSE_MAKEFILE ON)
     find_package(sel4runtime REQUIRED)
     musllibc_set_environment_flags()
     sel4runtime_import_project()
