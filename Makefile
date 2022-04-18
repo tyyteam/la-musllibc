@@ -43,6 +43,10 @@ ifeq (${CONFIG_ARCH_RISCV},y)
     TARGET = riscv
 endif
 
+ifeq (${CONFIG_ARCH_LOONGARCH},y)
+    TARGET = loongarch
+endif
+
 ifeq (${CONFIG_LINK_TIME_OPTIMISATIONS},y)
     CFLAGS += -flto
 endif

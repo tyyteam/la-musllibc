@@ -80,6 +80,7 @@ ifeq ($(ARCH),)
 
 all:
 	@echo "Please set ARCH in config.mak before running make."
+	@echo "leon test at there"
 	@exit 1
 
 else
