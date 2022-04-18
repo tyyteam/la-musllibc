@@ -324,6 +324,7 @@ microblaze*) ARCH=microblaze ;;
 or1k*) ARCH=or1k ;;
 powerpc64*) ARCH=powerpc64 ;;
 riscv*) ARCH=riscv ;;
+loongarch*) ARCH=loongarch ;;
 powerpc*) ARCH=powerpc ;;
 sh[1-9bel-]*|sh|superh*) ARCH=sh ;;
 s390x*) ARCH=s390x ;;
@@ -708,6 +709,8 @@ echo '#include <float.h>' > "$tmpc"
 echo '#if LDBL_MANT_DIG == 53' >> "$tmpc"
 echo 'typedef char ldcheck[9-(int)sizeof(long double)];' >> "$tmpc"
 echo '#endif' >> "$tmpc"
+echo "\n"
+echo $tmpc
 if $CC $CFLAGS_C99FSE \
   -I$srcdir/arch/$ARCH -I$srcdir/arch/generic -I$srcdir/include \
   $CPPFLAGS $CFLAGS -c -o /dev/null "$tmpc" >/dev/null 2>&1 ; then
