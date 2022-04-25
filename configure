@@ -1,5 +1,4 @@
 #!/bin/sh
-
 usage () {
 cat <<EOF
 Usage: $0 [OPTION]... [VAR=VALUE]... [TARGET]
