@@ -132,7 +132,7 @@ memoize_add_custom_command(
     # unset.
     "MAKEFLAGS=\"\$\${MAKEFLAGS:--s}\""
     # TODO: should also pass in the cflags for the CMAKE_BUILD_TYPE ?
-    NK_CFLAGS="${compile_options}"
+    #NK_CFLAGS="${compile_options}"
     TARGET=${muslc_arch}
     make
     -C
